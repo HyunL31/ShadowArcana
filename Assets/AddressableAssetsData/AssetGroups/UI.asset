@@ -14,12 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_GroupName: UI
   m_GUID: fb33aae2b6cab624a94abd304fdbce7e
-  m_SerializeEntries:
-  - m_GUID: 5e5c1e4e35007c74c8bb00ffe3505936
-    m_Address: UI/Title
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: ca3f773f2fd81ae458ece567d78010d6, type: 2}
   m_SchemaSet:

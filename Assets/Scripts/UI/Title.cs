@@ -12,7 +12,6 @@ public class Title : MonoBehaviour
 
     private void CloseTitle()
     {
-        Debug.Log("봉");
-        UIManager.Instance.CloseUI(UIManager.UIType.Title);
+        //UIManager.Instance.CloseUI(UIManager.UIType.Title);
     }
 }

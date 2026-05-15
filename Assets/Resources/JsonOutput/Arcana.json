@@ -1,0 +1,178 @@
+[
+  {
+    "ID": "Arcana_00",
+    "Name": "광대",
+    "Description": "무구함과 새로운 시작. 아무것도 모르는 순수함을 상징합니다.",
+    "Effect": null,
+    "Score": 1,
+    "ATK": 5
+  },
+  {
+    "ID": "Arcana_01",
+    "Name": "마법사",
+    "Description": "창조와 기술. 무언가를 고치거나 새로운 길을 만들어내는 능력을 뜻합니다.",
+    "Effect": null,
+    "Score": -1,
+    "ATK": 5
+  },
+  {
+    "ID": "Arcana_02",
+    "Name": "여사제",
+    "Description": "직관과 지혜. 보이지 않는 진실을 꿰뚫어 보며 내면의 소리에 귀를 기울입니다.",
+    "Effect": null,
+    "Score": 1,
+    "ATK": 6
+  },
+  {
+    "ID": "Arcana_03",
+    "Name": "여황제",
+    "Description": "풍요와 생명. 척박한 지하 세계에서도 생명을 틔우고 주변을 보살피는 자비입니다.",
+    "Effect": null,
+    "Score": -1,
+    "ATK": 7
+  },
+  {
+    "ID": "Arcana_04",
+    "Name": "황제",
+    "Description": "권위와 질서. 혼란을 잠재우기 위해 강압적일 수 있는 단호한 통제력을 상징합니다.",
+    "Effect": null,
+    "Score": -1,
+    "ATK": 3
+  },
+  {
+    "ID": "Arcana_05",
+    "Name": "교황",
+    "Description": "전통과 신념. 규칙을 준수하며 옳고 그름에 대한 도덕적 잣대를 제시합니다.",
+    "Effect": null,
+    "Score": 1,
+    "ATK": 2
+  },
+  {
+    "ID": "Arcana_06",
+    "Name": "연인",
+    "Description": "조화와 관계. 타인과의 깊은 공명, 혹은 화합을 의미합니다.",
+    "Effect": null,
+    "Score": 1,
+    "ATK": 5
+  },
+  {
+    "ID": "Arcana_07",
+    "Name": "전차",
+    "Description": "전진과 승리. 고난이 있어도 멈추지 않고 돌진하는 의지입니다.",
+    "Effect": null,
+    "Score": -1,
+    "ATK": 2
+  },
+  {
+    "ID": "Arcana_08",
+    "Name": "힘",
+    "Description": "인내와 용기. 무력이 아닌 부드러운 힘으로 거친 세상을 길들이는 내면의 강함입니다.",
+    "Effect": null,
+    "Score": 1,
+    "ATK": 3
+  },
+  {
+    "ID": "Arcana_09",
+    "Name": "은둔자",
+    "Description": "고독과 성찰. 타인과의 관계를 끊고 오로지 자신의 목적만을 위해 침잠합니다.",
+    "Effect": null,
+    "Score": -1,
+    "ATK": 3
+  },
+  {
+    "ID": "Arcana_10",
+    "Name": "운명의 수레바퀴",
+    "Description": "변화와 순환. 피할 수 없는 사건이 닥칠 때 운명에 몸을 맡깁니다.",
+    "Effect": null,
+    "Score": 1,
+    "ATK": 2
+  },
+  {
+    "ID": "Arcana_11",
+    "Name": "정의",
+    "Description": "균형과 인과. 죄에 대한 정당한 처벌을 내리며, 감정보다 이성을 중시합니다.",
+    "Effect": null,
+    "Score": -1,
+    "ATK": 2
+  },
+  {
+    "ID": "Arcana_12",
+    "Name": "매달린 남자",
+    "Description": "희생과 인내. 더 큰 목적을 위해 현재의 고통을 묵묵히 받아들이는 태도입니다.",
+    "Effect": null,
+    "Score": 1,
+    "ATK": 1
+  },
+  {
+    "ID": "Arcana_13",
+    "Name": "죽음",
+    "Description": "종결과 재생. 낡은 자아를 버리고 완전히 새로운 모습으로 거듭나는 극단적 변화입니다.",
+    "Effect": null,
+    "Score": -1,
+    "ATK": 5
+  },
+  {
+    "ID": "Arcana_14",
+    "Name": "절제",
+    "Description": "조절과 화합. 과하지 않게 에너지를 나누고 갈등을 중재하는 평화로운 수단입니다.",
+    "Effect": null,
+    "Score": 1,
+    "ATK": 2
+  },
+  {
+    "ID": "Arcana_15",
+    "Name": "악마",
+    "Description": "유혹과 구속. 내면의 공포나 욕망에 굴복하여 어둠의 힘을 거리낌 없이 사용합니다.",
+    "Effect": null,
+    "Score": -1,
+    "ATK": 3
+  },
+  {
+    "ID": "Arcana_16",
+    "Name": "탑",
+    "Description": "붕괴와 재난. 공들여 쌓아온 것이 무너질 때 느껴지는 허망함과 충격을 뜻합니다.",
+    "Effect": null,
+    "Score": -1,
+    "ATK": 4
+  },
+  {
+    "ID": "Arcana_17",
+    "Name": "별",
+    "Description": "희망과 정화. 어둠 속에서도 잃지 않는 순수한 믿음과 치유의 빛입니다.",
+    "Effect": null,
+    "Score": 1,
+    "ATK": 4
+  },
+  {
+    "ID": "Arcana_18",
+    "Name": "달",
+    "Description": "불안과 혼돈. 실체를 알 수 없는 공포 앞에서 경계심을 늦추지 않는 상태입니다.",
+    "Effect": null,
+    "Score": -1,
+    "ATK": 5
+  },
+  {
+    "ID": "Arcana_19",
+    "Name": "태양",
+    "Description": "생명력과 진실. 모든 비밀을 밝히고 밝은 에너지를 발산하는 긍정적 힘입니다.",
+    "Effect": null,
+    "Score": 1,
+    "ATK": 2
+  },
+  {
+    "ID": "Arcana_20",
+    "Name": "심판",
+    "Description": "결말과 보상. 지금까지의 행적에 대해 마지막 책임을 지고 과오를 인정합니다.",
+    "Effect": null,
+    "Score": -1,
+    "ATK": 3
+  },
+  {
+    "ID": "Arcana_21",
+    "Name": "세계",
+    "Description": "완성된 조화. 모든 여정을 끝내고 빛 아래 완전한 존재로 거듭납니다.",
+    "Effect": null,
+    "Score": 1,
+    "ATK": 3
+  }
+]

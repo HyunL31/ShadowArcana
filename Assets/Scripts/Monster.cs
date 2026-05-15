@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Monster : MonoBehaviour
 {
-    [SerializeField] private int monsterHP = 50;
-    [SerializeField] private int monsterATK = 50;
+    private int monsterHP = 50;
+    private int monsterATK = 10;
 
     private PlayerController player;
     private Animator _anim;
@@ -16,6 +16,16 @@ public class Monster : MonoBehaviour
     {
         player.TakeDamage(monsterATK);
         _anim = GetComponent<Animator>();
+    }
+
+    public void TakeDamage(int atk)
+    {
+        monsterHP -= atk;
+
+        if (monsterHP <= 0)
+        {
+            Die().Forget();
+        }
     }
 
     private async UniTaskVoid AttackRoutine(CancellationToken token)
@@ -61,5 +71,14 @@ public class Monster : MonoBehaviour
 
             player = null;
         }
+    }
+
+    private async UniTaskVoid Die()
+    {
+        _anim.SetTrigger("Dead");
+
+        await UniTask.Delay(1000);
+
+        gameObject.SetActive(false);
     }
 }

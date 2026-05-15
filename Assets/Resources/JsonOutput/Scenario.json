@@ -1,0 +1,706 @@
+[
+  {
+    "ID": "Dialogue_01",
+    "NextID": "Dialogue_02",
+    "CharacterID": "Nyx_01",
+    "Content": "정신이 들어?",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Dialogue_02",
+    "NextID": "Dialogue_03",
+    "CharacterID": "Nyx_01",
+    "Content": "꽤나 요란하게 떨어지더군.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Dialogue_03",
+    "NextID": "Dialogue_04",
+    "CharacterID": "Nyx_01",
+    "Content": "뼈가 부서지지 않은 게 기적이야.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Dialogue_04",
+    "NextID": "Dialogue_05",
+    "CharacterID": "El_01",
+    "Content": "...여긴 어디지?",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Dialogue_05",
+    "NextID": "Dialogue_06",
+    "CharacterID": "El_01",
+    "Content": "아무것도... 기억나지 않아.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Dialogue_06",
+    "NextID": "Dialogue_07",
+    "CharacterID": "El_01",
+    "Content": "당신은 누구야?",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Dialogue_07",
+    "NextID": "Dialogue_08",
+    "CharacterID": "Nyx_01",
+    "Content": "난 니크스.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Dialogue_08",
+    "NextID": "Dialogue_09",
+    "CharacterID": "Nyx_01",
+    "Content": "네 운명을 안내할 자지.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Dialogue_09",
+    "NextID": "Dialogue_10",
+    "CharacterID": "Nyx_01",
+    "Content": "그리고 저 너머를 봐.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Dialogue_10",
+    "NextID": "Dialogue_11",
+    "CharacterID": "Nyx_01",
+    "Content": "너를 지켜보는 거대한 시선이 느껴지지 않아?",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Dialogue_11",
+    "NextID": "Choice_01",
+    "CharacterID": "Nyx_01",
+    "Content": "성좌'께서 너에게 첫 번째 신탁을 내리려 하신다.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Dialogue_12",
+    "NextID": "Dialogue_13",
+    "CharacterID": "El_01",
+    "Content": "이건... 따뜻한 빛이야.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Dialogue_13",
+    "NextID": "Dialogue_14",
+    "CharacterID": "El_01",
+    "Content": "마치 '다시 시작해도 괜찮다'고 말해주는 것 같아.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Dialogue_14",
+    "NextID": "Dialogue_15",
+    "CharacterID": "Nyx_01",
+    "Content": "흥, 대책 없는 낙천주의자로군.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Dialogue_15",
+    "NextID": "Dialogue_16",
+    "CharacterID": "Nyx_01",
+    "Content": "하지만 이 어둠 속에서 그런 무모함이 널 움직이게 할지도 모르지.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Dialogue_16",
+    "NextID": "Dialogue_17",
+    "CharacterID": "El_01",
+    "Content": "누군지 모르겠지만 믿어보고 싶어.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Dialogue_17",
+    "NextID": "Dialogue_18",
+    "CharacterID": "El_01",
+    "Content": "이 손을 잡으면 여기서 나갈 수 있을 것만 같아.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Dialogue_18",
+    "NextID": "Dialogue_35",
+    "CharacterID": null,
+    "Content": "엘이 성좌를 향해 처음으로 희미한 미소를 짓습니다.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Dialogue_19",
+    "NextID": "Dialogue_20",
+    "CharacterID": "El_01",
+    "Content": "차갑고 날카로운 기운이야...",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Dialogue_20",
+    "NextID": "Dialogue_21",
+    "CharacterID": "El_01",
+    "Content": "이 빛은 나를 지켜보는 걸까, 아니면 감시하는 걸까?",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Dialogue_21",
+    "NextID": "Dialogue_22",
+    "CharacterID": "Nyx_01",
+    "Content": "현명한 의심이야.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Dialogue_22",
+    "NextID": "Dialogue_23",
+    "CharacterID": "Nyx_01",
+    "Content": "보이지 않는 존재의 호의만큼 위험한 건 없으니까.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Dialogue_23",
+    "NextID": "Dialogue_24",
+    "CharacterID": "Nyx_01",
+    "Content": "경계심은 네 목숨을 늘려주지.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Dialogue_24",
+    "NextID": "Dialogue_25",
+    "CharacterID": "El_01",
+    "Content": "도움은 받겠지만, 전부 믿지는 않겠어.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Dialogue_25",
+    "NextID": "Dialogue_26",
+    "CharacterID": "El_01",
+    "Content": "당신이 누구든 나를 조종하려 들지 마.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Dialogue_26",
+    "NextID": "Dialogue_35",
+    "CharacterID": null,
+    "Content": "엘이 눈을 가늘게 뜨며 성좌를 경계하기 시작합니다.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Dialogue_27",
+    "NextID": "Dialogue_28",
+    "CharacterID": "El_01",
+    "Content": "이건 대체 무슨 의미지?",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Dialogue_28",
+    "NextID": "Dialogue_29",
+    "CharacterID": "El_01",
+    "Content": "이해할 수 없는 환영들이 머릿속을 스쳐 지나가...",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Dialogue_29",
+    "NextID": "Dialogue_30",
+    "CharacterID": "Nyx_01",
+    "Content": "성좌님도 아직은 갈피를 못 잡으신 모양이군.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Dialogue_30",
+    "NextID": "Dialogue_31",
+    "CharacterID": "Nyx_01",
+    "Content": "너라는 그릇이 무엇을 담을지 간을 보고 계신 거야.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Dialogue_31",
+    "NextID": "Dialogue_32",
+    "CharacterID": "El_01",
+    "Content": "혼란스러워...",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Dialogue_32",
+    "NextID": "Dialogue_33",
+    "CharacterID": "El_01",
+    "Content": "하지만 이대로 죽을 순 없어.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Dialogue_33",
+    "NextID": "Dialogue_34",
+    "CharacterID": "El_01",
+    "Content": "일단 움직여야겠어.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Dialogue_34",
+    "NextID": "Dialogue_35",
+    "CharacterID": null,
+    "Content": "엘이 불안해하며 조심스럽게 발을 뗍니다.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Dialogue_35",
+    "NextID": "Dialogue_36",
+    "CharacterID": "Nyx_01",
+    "Content": "자, 신탁은 내려졌어.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Dialogue_36",
+    "NextID": "Dialogue_37",
+    "CharacterID": "Nyx_01",
+    "Content": "이제 7일간의 기도가 시작된다.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Dialogue_37",
+    "NextID": "Dialogue_38",
+    "CharacterID": "Nyx_01",
+    "Content": "그 끝에 네가 성자가 될지, 괴물이 될지는...",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Dialogue_38",
+    "NextID": "Dialogue_39",
+    "CharacterID": "Nyx_01",
+    "Content": "네 머리 위의 저 존재에게 달려있지.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Dialogue_39",
+    "NextID": "Stage_01_00",
+    "CharacterID": "El_01",
+    "Content": "가자, 니크스. 지상으로 가는 문을 찾아야 해.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Stage_01_01",
+    "NextID": "Stage_01_02",
+    "CharacterID": "Nyx_01",
+    "Content": "저 녀석은 그루미군.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Stage_01_02",
+    "NextID": "Stage_01_03",
+    "CharacterID": "Nyx_01",
+    "Content": "덩치는 산만 해도 심약한 놈인데,",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Stage_01_03",
+    "NextID": "Stage_01_04",
+    "CharacterID": "Nyx_01",
+    "Content": " 배가 고프면 눈에 뵈는 게 없어서 가시를 휘두르곤 하지.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Stage_01_04",
+    "NextID": "Stage_01_05",
+    "CharacterID": "Nyx_01",
+    "Content": "어쩌겠어? 힘으로 밀어붙일까, 아니면 달래볼까?",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Stage_01_05",
+    "NextID": "Stage_01_06",
+    "CharacterID": "El_01",
+    "Content": "다가갈 수가 없어...",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Stage_01_06",
+    "NextID": "Stage_01_07",
+    "CharacterID": "El_01",
+    "Content": "그루미, 우릴 지나가게 해줘.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Stage_01_07",
+    "NextID": "Stage_01_08",
+    "CharacterID": "El_01",
+    "Content": "우린 널 해치고 싶지 않아.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Stage_01_08",
+    "NextID": "Stage_01_09",
+    "CharacterID": "Groomy_01",
+    "Content": "배고파... 배고파서 아무것도 안 들려!",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Stage_01_09",
+    "NextID": "Choice_02",
+    "CharacterID": "Groomy_01",
+    "Content": "내 구역에 들어왔으니 너희를 먹이로 삼겠다!",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Stage_01_10",
+    "NextID": "Stage_01_11",
+    "CharacterID": "El_01",
+    "Content": "이건 내가 아껴둔 거지만... 너에게 줄게.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Stage_01_11",
+    "NextID": "Stage_01_12",
+    "CharacterID": "El_01",
+    "Content": "자, 이걸 먹고 진정해.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Stage_01_12",
+    "NextID": "Stage_01_13",
+    "CharacterID": "Groomy_01",
+    "Content": "우와... 맛있다... 따뜻해.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Stage_01_13",
+    "NextID": "Stage_01_14",
+    "CharacterID": "Groomy_01",
+    "Content": "나를 때리지 않고 먹을 걸 준 건 네가 처음이야. 지나가도 좋아.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Stage_01_14",
+    "NextID": "Stage_01_15",
+    "CharacterID": "Nyx_01",
+    "Content": "호오, '절제'의 미덕인가?",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Stage_01_15",
+    "NextID": "Stage_01_16",
+    "CharacterID": "Nyx_01",
+    "Content": "제 배를 채우는 대신 자비를 베풀다니, 성좌님도 참 무른 구석이 있군.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Stage_01_16",
+    "NextID": "0",
+    "CharacterID": null,
+    "Content": "그루미가 길을 비켜주었습니다.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Stage_01_17",
+    "NextID": "Stage_01_18",
+    "CharacterID": "El_01",
+    "Content": "길을 막는다면 강제로 열 수밖에.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Stage_01_18",
+    "NextID": "Stage_01_19",
+    "CharacterID": "El_01",
+    "Content": "질서를 어지럽히는 폭력에는 정당한 대가가 따르는 법이야!",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Stage_01_19",
+    "NextID": "Stage_01_20",
+    "CharacterID": "Groomy_01",
+    "Content": "으악! 아파, 아프다고! 살려줘!",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Stage_01_20",
+    "NextID": "Stage_01_21",
+    "CharacterID": "Nyx_01",
+    "Content": "깔끔하군. '정의'의 이름 아래 휘두르는 폭력만큼 효율적인 건 없지.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Stage_01_21",
+    "NextID": "Stage_01_22",
+    "CharacterID": "Nyx_01",
+    "Content": "이제 방해꾼은 사라졌어.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Stage_01_22",
+    "NextID": "Stage_01_23",
+    "CharacterID": "El_01",
+    "Content": "해야 할 일을 했을 뿐이야.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Stage_01_23",
+    "NextID": "0",
+    "CharacterID": "El_01",
+    "Content": "나약함은 이 세계에서 죄악이니까.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Stage_01_24",
+    "NextID": "Stage_01_25",
+    "CharacterID": "El_01",
+    "Content": "준비해, 니크스! 말이 통하지 않아!",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Stage_01_25",
+    "NextID": "Stage_01_26",
+    "CharacterID": "Groomy_01",
+    "Content": "먹이! 단백질!",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Stage_01_26",
+    "NextID": "Stage_01_27",
+    "CharacterID": "Nyx_01",
+    "Content": "쯧, 성좌님이 이번엔 별 도움이 안 되시는군.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Stage_01_27",
+    "NextID": "Battle_01",
+    "CharacterID": "Nyx_01",
+    "Content": "직접 몸으로 때우는 수밖에!",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Good_End_01",
+    "NextID": "Good_End_02",
+    "CharacterID": "El_01",
+    "Content": "보여요, 성좌님... 당신이 바라던 세상이 어떤 곳인지.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Good_End_02",
+    "NextID": "Good_End_03",
+    "CharacterID": "El_01",
+    "Content": "제가 흔들릴 때마다 길을 잡아준 건 당신이었어요.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Good_End_03",
+    "NextID": "Good_End_04",
+    "CharacterID": "El_01",
+    "Content": "그 말들이 없었다면 여기까지 오지 못했을 거예요.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Good_End_04",
+    "NextID": "Good_End_05",
+    "CharacterID": "El_01",
+    "Content": "지상에 가서도 잊지 않을게요. 제가 앞으로 나아갈 수 있었던 이유를.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Good_End_05",
+    "NextID": "Good_End_06",
+    "CharacterID": "El_01",
+    "Content": "안녕히, 성좌님.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Good_End_06",
+    "NextID": "0",
+    "CharacterID": null,
+    "Content": "엘은 지상의 성자가 되어 오래도록 당신을 기억할 것입니다.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Bad_End_01",
+    "NextID": "Bad_End_02",
+    "CharacterID": "El_01",
+    "Content": "지상으로 가라니… 왜 제가 그런 약한 곳에 내려가야 하죠?",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Bad_End_02",
+    "NextID": "Bad_End_03",
+    "CharacterID": "El_01",
+    "Content": "당신이 제게 준 힘은 예상보다 훨씬 대단했어요.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Bad_End_03",
+    "NextID": "Bad_End_04",
+    "CharacterID": "El_01",
+    "Content": "이제 와서 멈추라고 해도 이미 늦었습니다.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Bad_End_04",
+    "NextID": "Bad_End_05",
+    "CharacterID": "El_01",
+    "Content": "적어도 여기선 다들 본심을 숨기지 않네요.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Bad_End_05",
+    "NextID": "Bad_End_06",
+    "CharacterID": "El_01",
+    "Content": "위선적인 기도 소리보단 훨씬 낫군요.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Bad_End_06",
+    "NextID": "Bad_End_07",
+    "CharacterID": "El_01",
+    "Content": "그러니 끝까지 지켜봐 주세요, 성좌님.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Bad_End_07",
+    "NextID": "Bad_End_08",
+    "CharacterID": "El_01",
+    "Content": "저를 여기까지 만든 사람이니까.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Bad_End_08",
+    "NextID": "Bad_End_09",
+    "CharacterID": null,
+    "Content": "심연의 왕이 탄생했습니다.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Bad_End_09",
+    "NextID": "0",
+    "CharacterID": null,
+    "Content": "당신은 자신이 만든 재앙을 끝까지 바라보게 될 것입니다.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Normal_End_01",
+    "NextID": "Normal_End_02",
+    "CharacterID": "El_01",
+    "Content": "착하게 살라더니, 다음엔 망설이지 말고 부수라고 하셨죠...",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Normal_End_02",
+    "NextID": "Normal_End_03",
+    "CharacterID": "El_01",
+    "Content": "성좌님의 말을 따를수록 뭐가 맞는 건지 점점 모르겠더군요.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Normal_End_03",
+    "NextID": "Normal_End_04",
+    "CharacterID": "El_01",
+    "Content": "어느 순간부터는 제 생각인지, 당신의 뜻인지조차 구분이 안 됐어요.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Normal_End_04",
+    "NextID": "Normal_End_05",
+    "CharacterID": "El_01",
+    "Content": "전 대체 뭘 위해 움직였던 거죠...?",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Normal_End_05",
+    "NextID": "Normal_End_06",
+    "CharacterID": "El_01",
+    "Content": "당신은 그냥 하고 싶은 대로 저를 움직였을 뿐이잖아요.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Normal_End_06",
+    "NextID": "Normal_End_07",
+    "CharacterID": null,
+    "Content": "영혼이 형태를 유지하지 못한 채 흩어집니다.",
+    "BGM": null,
+    "SFX": null
+  },
+  {
+    "ID": "Normal_End_07",
+    "NextID": "0",
+    "CharacterID": null,
+    "Content": "누구에게도 기록되지 못한 결말입니다.",
+    "BGM": null,
+    "SFX": null
+  }
+]

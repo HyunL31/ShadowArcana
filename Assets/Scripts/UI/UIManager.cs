@@ -20,8 +20,7 @@ public class UIManager : MonoBehaviour
 
     private void Start()
     {
-        //UIExtension.InitTitle();
-        UIExtension.OpenLoading();
+        UIExtension.InitTitle();
     }
 
     private Transform GetUIRoot(UIRootType rootType)
@@ -62,6 +61,7 @@ public class UIManager : MonoBehaviour
             if (gobj != null)
             {
                 _uiType[type] = gobj;
+                _openedUI.Add(type);
             }
         }
     }
@@ -101,5 +101,10 @@ public class UIManager : MonoBehaviour
         {
             GetCreatUI(root, type);
         }
+    }
+
+    public void CloseBackgroundUI()
+    {
+        backgroundRoot.gameObject.SetActive(false);
     }
 }

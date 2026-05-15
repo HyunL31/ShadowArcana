@@ -1,7 +1,4 @@
-﻿using UnityEditor.Build.Pipeline;
-using UnityEngine;
-
-public enum UIRootType
+﻿public enum UIRootType
 {
     None,
     BackgroundUI,
@@ -16,6 +13,7 @@ public enum UIType
     Title,
     Lobby,
     Loading,
+    Ending,
     Win,
     Die
 }
@@ -34,6 +32,12 @@ public static class UIExtension
         UIManager.Instance.OpenUI(UIRootType.FrontUI, UIType.Title);
     }
 
+    public static void OpenLobby()
+    {
+        UIManager.Instance.CloseUI(UIType.Title);
+        UIManager.Instance.OpenUI(UIRootType.MainUI, UIType.Lobby);
+    }
+
     public static void OpenLoading()
     {
         UIManager.Instance.OpenUI(UIRootType.FrontUI, UIType.Loading);
@@ -42,5 +46,10 @@ public static class UIExtension
     public static void CloseLoading()
     {
         UIManager.Instance.CloseUI(UIType.Loading);
+    }
+
+    public static void OpenEndingUI()
+    {
+        UIManager.Instance.OpenUI(UIRootType.MainUI, UIType.Ending);
     }
 }

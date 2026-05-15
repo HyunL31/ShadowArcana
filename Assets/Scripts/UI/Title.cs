@@ -4,14 +4,16 @@ using UnityEngine.UI;
 public class Title : MonoBehaviour
 {
     [SerializeField] private Button startButton;
+    [SerializeField] private Button newGameButton;
 
-    private void Awake()
+    private void Start()
     {
-        startButton.onClick.AddListener(CloseTitle);
-    }
+        startButton.onClick.AddListener(() =>
+        {
+            GameManager.Instance.Load();
+            UIExtension.OpenLobby();
+        });
 
-    private void CloseTitle()
-    {
-        //UIManager.Instance.CloseUI(UIManager.UIType.Title);
+        newGameButton.onClick.AddListener(UIExtension.OpenLobby);
     }
 }

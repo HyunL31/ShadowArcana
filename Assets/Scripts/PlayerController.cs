@@ -1,20 +1,21 @@
-﻿using UnityEngine;
+﻿using Cysharp.Threading.Tasks;
+using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private AnimatorController animController;
 
     public int hp = 100;
-    public int atk = 10;
+    public int atk = 20;
 
     public float walkSpeed = 5f;
     public float runSpeed = 8f;
     public float jumpForce = 5f;
 
     private Rigidbody2D _rb;
-    public bool isMoving = false;
-    public bool isRunning = false;
-    public bool isGround = true;
+    private Monster _target;
+    private bool isRunning = false;
+    private bool isGround = true;
 
     private void Awake()
     {
@@ -34,13 +35,17 @@ public class PlayerController : MonoBehaviour
         }
 
         SetDirection(inputX);
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            Attack();
+        }
     }
 
     private void Move(float inputX)
     {
         if (inputX == 0)
         {
-            isMoving = false;
             isRunning = false;
 
             animController.ResetBoolState();
@@ -50,7 +55,6 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        isMoving = true;
         animController.SetAnim(AnimatorController.AnimState.IsMoving);
 
         float moveSpeed = Input.GetKey(KeyCode.LeftShift) ? runSpeed : walkSpeed;
@@ -68,7 +72,7 @@ public class PlayerController : MonoBehaviour
     {
         isGround = false;
 
-        _rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        _rb.linearVelocity = new Vector2(_rb.linearVelocity.x, jumpForce);
     }
 
     private void SetDirection(float inputX)
@@ -96,8 +100,48 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void Attack()
+    {
+        animController.SetAnim(AnimatorController.AnimState.Attack);
+
+        if (_target != null)
+        {
+            _target.TakeDamage(atk);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Monster"))
+        {
+            _target = collision.gameObject.GetComponent<Monster>();
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Monster"))
+        {
+            _target = null;
+        }
+    }
+
     public void TakeDamage(int atk)
     {
         hp -= atk;
+
+        if (hp <= 0)
+        {
+            Die().Forget();
+        }
+    }
+
+    private async UniTaskVoid Die()
+    {
+        animController.SetAnim(AnimatorController.AnimState.Dead);
+
+        await UniTask.Delay(500);
+
+        gameObject.SetActive(false);
     }
 }

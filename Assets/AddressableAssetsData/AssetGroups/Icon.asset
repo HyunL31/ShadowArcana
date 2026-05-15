@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Icon
+  m_EditorClassIdentifier: 
+  m_GroupName: Icon
+  m_GUID: b009e8b76da9eca49bc259bf3ac3dbe3
+  m_SerializeEntries:
+  - m_GUID: 9e673e32780ed3d499ae19ac297cecb6
+    m_Address: Image/Arcana
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f4e9dc5ed9f700842af718df4785847b
+    m_Address: Image/Aracana
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: ca3f773f2fd81ae458ece567d78010d6, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: bda8c1ba2090930499968c90e56f68d5, type: 2}
+    - {fileID: 11400000, guid: b2242c68b6f3eab4f939a3aa19a238fb, type: 2}

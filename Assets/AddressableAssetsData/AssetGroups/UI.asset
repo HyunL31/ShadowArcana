@@ -14,7 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_GroupName: UI
   m_GUID: fb33aae2b6cab624a94abd304fdbce7e
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: a6418b3f5cb53aa40bdbbcab9426ed24
+    m_Address: Prefab/CardSlot
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: ca3f773f2fd81ae458ece567d78010d6, type: 2}
   m_SchemaSet:

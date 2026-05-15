@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3f179c288ede10747b49304ec056c0e8
+guid: 56728ccefc1662c46912ff215acacddf
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -136,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 20250421barA-Sheet_0
+      name: Square_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 95
-        height: 17
+        width: 786
+        height: 663
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,8 +151,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d22625dd9d465cc4ab9a492c5db5126e
-      internalID: -1226772041
+      spriteID: 0a28dfc363b2fd44cb5effdc3e756cb3
+      internalID: -828038439
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 402583f828b52604f8316651af6ac420
+    spriteID: 93f1979995b86744683557d5ad87734b
     internalID: 0
     vertices: []
     indices: 
@@ -171,7 +171,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      20250421barA-Sheet_0: -1226772041
+      Square_0: -828038439
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

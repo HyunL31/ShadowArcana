@@ -2,12 +2,12 @@
 
 public class CameraMoving : MonoBehaviour
 {
-    [SerializeField] private GameObject _player;
     public float _speed = 3f;
 
     [SerializeField] private Transform _minMargin;
     [SerializeField] private Transform _maxMargin;
 
+    private GameObject _player;
     private float yOffset = 1f;
 
     private void Update()
@@ -17,6 +17,11 @@ public class CameraMoving : MonoBehaviour
 
     private void Follow()
     {
+        if (_player == null)
+        {
+            return;
+        }
+
         Vector3 targetPos = new Vector3(_player.transform.position.x, _player.transform.position.y + yOffset, transform.position.z);
 
         Vector3 nextPos = Vector3.Lerp(transform.position, targetPos, _speed * Time.deltaTime);
@@ -25,5 +30,10 @@ public class CameraMoving : MonoBehaviour
         float clampedY = Mathf.Clamp(nextPos.y, _minMargin.position.y, _maxMargin.position.y);
 
         transform.position = new Vector3(clampedX, clampedY, transform.position.z);
+    }
+
+    public void SetPlayer(GameObject player)
+    {
+        _player = player;
     }
 }

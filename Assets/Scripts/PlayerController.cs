@@ -12,14 +12,24 @@ public class PlayerController : MonoBehaviour
     public float _runSpeed = 8f;
     public float _jumpForce = 5f;
 
+    private int _maxHP = 100;
     private Rigidbody2D _rb;
     private Monster _target;
     private bool _isRunning = false;
     private bool _isGround = true;
+    private HPBar _hpBar;
 
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
+
+        PlayerHP = _maxHP;
+        PlayerATK = 15;
+    }
+
+    private void Start()
+    {
+        _hpBar = UIManager.Instance.OpenHPBarUI(_maxHP, this.gameObject);
     }
 
     private void Update()
@@ -129,9 +139,11 @@ public class PlayerController : MonoBehaviour
     public void TakeDamage(int atk)
     {
         PlayerHP -= atk;
+        _hpBar.UpdateValue(PlayerHP);
 
         if (PlayerHP <= 0)
         {
+            UIManager.Instance.CloseHPBar(_hpBar);
             Die().Forget();
         }
     }

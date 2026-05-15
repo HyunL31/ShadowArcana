@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Lobby : MonoBehaviour
+public class Lobby : UIBase
 {
     [SerializeField] private Button _startButton;
     [SerializeField] private TextMeshProUGUI _stageText;
@@ -26,7 +26,11 @@ public class Lobby : MonoBehaviour
         GameObject map = Instantiate(mapResource);
 
         string playerPath = "Prefab/Player";
-        ResourceManager.Instance.InstantiatePrefab(playerPath, map.transform, (prefab) => { });
+        ResourceManager.Instance.InstantiatePrefab(playerPath, map.transform, (prefab) =>
+        {
+            CameraMoving camera = Camera.main.GetComponent<CameraMoving>();
+            camera.SetPlayer(prefab);
+        });
 
         UIManager.Instance.CloseBackgroundUI();
         this.gameObject.SetActive(false);

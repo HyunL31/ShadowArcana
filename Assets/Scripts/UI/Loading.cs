@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Loading : MonoBehaviour
+public class Loading : UIBase
 {
     [SerializeField] private Slider _loadingBar;
 

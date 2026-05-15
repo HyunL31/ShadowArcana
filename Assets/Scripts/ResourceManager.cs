@@ -35,11 +35,17 @@ public class ResourceManager : MonoBehaviour
         };
     }
 
-    public void InstantiatePrefab(string path, Transform parent, Action<GameObject> callback)
+    public GameObject InstantiatePrefab(string path, Transform parent, Action<GameObject> callback)
     {
+        GameObject obj = null;
+
         Addressables.InstantiateAsync(path, parent).Completed += (op) =>
         {
             callback?.Invoke(op.Result);
+
+            obj = op.Result;
         };
+
+        return obj;
     }
 }

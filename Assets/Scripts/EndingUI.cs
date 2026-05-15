@@ -3,7 +3,7 @@ using System.Threading;
 using TMPro;
 using UnityEngine;
 
-public class DialogueUI : MonoBehaviour
+public class EndingUI : UIBase
 {
     [SerializeField] private GameObject _systemDialogue;
     [SerializeField] private GameObject _characterDialogue;

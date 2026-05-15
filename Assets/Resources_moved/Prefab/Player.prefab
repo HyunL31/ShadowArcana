@@ -52,7 +52,7 @@ MonoBehaviour:
   _animController: {fileID: 7829927604685562431}
   _walkSpeed: 5
   _runSpeed: 8
-  _jumpForce: 5
+  _jumpForce: 7.5
 --- !u!50 &576827255230582551
 Rigidbody2D:
   serializedVersion: 5

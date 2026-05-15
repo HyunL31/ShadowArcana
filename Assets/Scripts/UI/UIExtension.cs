@@ -1,4 +1,7 @@
-﻿public enum UIRootType
+﻿using System;
+using UnityEngine;
+
+public enum UIRootType
 {
     None,
     BackgroundUI,
@@ -14,6 +17,7 @@ public enum UIType
     Lobby,
     Loading,
     Ending,
+    HPBar,
     Win,
     Die
 }

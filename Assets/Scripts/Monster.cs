@@ -11,11 +11,15 @@ public class Monster : MonoBehaviour
     private Animator _anim;
     private bool _canAttack = false;
     private CancellationTokenSource _tokenSource = new CancellationTokenSource();
+    private int _maxHP = 50;
+    private HPBar _hpBar;
 
     private void OnEnable()
     {
         MonsterHP = 50;
         MonsterATK = 10;
+
+        _hpBar = UIManager.Instance.OpenHPBarUI(_maxHP, this.gameObject);
     }
 
     private void Attack()
@@ -27,9 +31,11 @@ public class Monster : MonoBehaviour
     public void TakeDamage(int atk)
     {
         MonsterHP -= atk;
+        _hpBar.UpdateValue(MonsterHP);
 
         if (MonsterHP <= 0)
         {
+            UIManager.Instance.CloseHPBar(_hpBar);
             Die().Forget();
         }
     }

@@ -3,19 +3,19 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private AnimatorController animController;
+    [SerializeField] private AnimatorController _animController;
 
-    public int hp = 100;
-    public int atk = 20;
+    private int PlayerHP { get; set; }
+    private int PlayerATK { get; set; }
 
-    public float walkSpeed = 5f;
-    public float runSpeed = 8f;
-    public float jumpForce = 5f;
+    public float _walkSpeed = 5f;
+    public float _runSpeed = 8f;
+    public float _jumpForce = 5f;
 
     private Rigidbody2D _rb;
     private Monster _target;
-    private bool isRunning = false;
-    private bool isGround = true;
+    private bool _isRunning = false;
+    private bool _isGround = true;
 
     private void Awake()
     {
@@ -28,9 +28,9 @@ public class PlayerController : MonoBehaviour
 
         Move(inputX);
 
-        if (Input.GetKeyDown(KeyCode.Space) && isGround)
+        if (Input.GetKeyDown(KeyCode.Space) && _isGround)
         {
-            animController.SetAnim(AnimatorController.AnimState.Jump);
+            _animController.SetAnim(AnimatorController.AnimState.Jump);
             Jump();
         }
 
@@ -46,23 +46,23 @@ public class PlayerController : MonoBehaviour
     {
         if (inputX == 0)
         {
-            isRunning = false;
+            _isRunning = false;
 
-            animController.ResetBoolState();
+            _animController.ResetBoolState();
 
             _rb.linearVelocity = new Vector2(0, _rb.linearVelocity.y);
 
             return;
         }
 
-        animController.SetAnim(AnimatorController.AnimState.IsMoving);
+        _animController.SetAnim(AnimatorController.AnimState.IsMoving);
 
-        float moveSpeed = Input.GetKey(KeyCode.LeftShift) ? runSpeed : walkSpeed;
-        isRunning = (moveSpeed == runSpeed);
+        float moveSpeed = Input.GetKey(KeyCode.LeftShift) ? _runSpeed : _walkSpeed;
+        _isRunning = (moveSpeed == _runSpeed);
 
-        if (isRunning)
+        if (_isRunning)
         {
-            animController.SetAnim(AnimatorController.AnimState.IsRunning);
+            _animController.SetAnim(AnimatorController.AnimState.IsRunning);
         }
 
         _rb.linearVelocity = new Vector2(inputX * moveSpeed, _rb.linearVelocity.y);
@@ -70,9 +70,9 @@ public class PlayerController : MonoBehaviour
 
     private void Jump()
     {
-        isGround = false;
+        _isGround = false;
 
-        _rb.linearVelocity = new Vector2(_rb.linearVelocity.x, jumpForce);
+        _rb.linearVelocity = new Vector2(_rb.linearVelocity.x, _jumpForce);
     }
 
     private void SetDirection(float inputX)
@@ -96,17 +96,17 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
-            isGround = true;
+            _isGround = true;
         }
     }
 
     private void Attack()
     {
-        animController.SetAnim(AnimatorController.AnimState.Attack);
+        _animController.SetAnim(AnimatorController.AnimState.Attack);
 
         if (_target != null)
         {
-            _target.TakeDamage(atk);
+            _target.TakeDamage(PlayerATK);
         }
     }
 
@@ -128,9 +128,9 @@ public class PlayerController : MonoBehaviour
 
     public void TakeDamage(int atk)
     {
-        hp -= atk;
+        PlayerHP -= atk;
 
-        if (hp <= 0)
+        if (PlayerHP <= 0)
         {
             Die().Forget();
         }
@@ -138,7 +138,7 @@ public class PlayerController : MonoBehaviour
 
     private async UniTaskVoid Die()
     {
-        animController.SetAnim(AnimatorController.AnimState.Dead);
+        _animController.SetAnim(AnimatorController.AnimState.Dead);
 
         await UniTask.Delay(500);
 

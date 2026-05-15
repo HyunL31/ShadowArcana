@@ -1,38 +1,38 @@
 ﻿using Cysharp.Threading.Tasks;
-using System.Collections.Generic;
 using System.Threading;
 using TMPro;
 using UnityEngine;
 
 public class DialogueUI : MonoBehaviour
 {
-    [SerializeField] private GameObject systemDialogue;
-    [SerializeField] private GameObject characterDialogue;
-    [SerializeField] private TextMeshProUGUI speaker;
-    [SerializeField] private TextMeshProUGUI content;
-    [SerializeField] private TextMeshProUGUI systemText;
+    [SerializeField] private GameObject _systemDialogue;
+    [SerializeField] private GameObject _characterDialogue;
+    [SerializeField] private TextMeshProUGUI _speaker;
+    [SerializeField] private TextMeshProUGUI _content;
+    [SerializeField] private TextMeshProUGUI _systemText;
 
-    private string currentID = "Good_End_01";
-    private bool isTyping = false;
+    private string CurrentID {  get; set; }
+    private bool _isTyping = false;
 
     private CancellationTokenSource cts;
 
     private void Start()
     {
-        ShowEndingDialogue(currentID);
+        CurrentID = "Good_End_01";
+        ShowEndingDialogue(CurrentID);
     }
 
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if (isTyping)
+            if (_isTyping)
             {
-                isTyping = false;
+                _isTyping = false;
             }
             else
             {
-                MoveToNext(currentID);
+                MoveToNext(CurrentID);
             }
         }
     }
@@ -43,19 +43,19 @@ public class DialogueUI : MonoBehaviour
         
         if (data.CharacterID == string.Empty)
         {
-            characterDialogue.SetActive(false);
+            _characterDialogue.SetActive(false);
 
-            systemDialogue.SetActive(true);
-            systemText.text = data.Content;
+            _systemDialogue.SetActive(true);
+            _systemText.text = data.Content;
         }
         else
         {
             string speakerName = GameDataManager.Instance.GetCharacterData(data.CharacterID).Name;
 
-            systemDialogue.SetActive(false);
+            _systemDialogue.SetActive(false);
 
-            characterDialogue.SetActive(true);
-            speaker.text = speakerName;
+            _characterDialogue.SetActive(true);
+            _speaker.text = speakerName;
 
             CancellationTokenSource cts = new CancellationTokenSource();
             TypingEffect(cts.Token).Forget();
@@ -65,28 +65,28 @@ public class DialogueUI : MonoBehaviour
     private void MoveToNext(string id)
     {
         string nextID = GameDataManager.Instance.GetScenarioData(id).NextID;
-        currentID = nextID;
+        CurrentID = nextID;
 
-        ShowEndingDialogue(currentID);
+        ShowEndingDialogue(CurrentID);
     }
 
     private async UniTaskVoid TypingEffect(CancellationToken token)
     {
-        isTyping = true;
+        _isTyping = true;
 
-        string data = GameDataManager.Instance.GetScenarioData(currentID).Content;
-        content.text = data;
-        content.maxVisibleCharacters = 0;
+        string data = GameDataManager.Instance.GetScenarioData(CurrentID).Content;
+        _content.text = data;
+        _content.maxVisibleCharacters = 0;
 
-        while (data.Length > content.maxVisibleCharacters)
+        while (data.Length > _content.maxVisibleCharacters)
         {
-            content.maxVisibleCharacters++;
+            _content.maxVisibleCharacters++;
 
             await UniTask.Delay(30);
 
-            if (!isTyping)
+            if (!_isTyping)
             {
-                content.maxVisibleCharacters = data.Length;
+                _content.maxVisibleCharacters = data.Length;
 
                 cts?.Cancel();
                 cts?.Dispose();

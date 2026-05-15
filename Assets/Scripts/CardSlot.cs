@@ -3,18 +3,18 @@ using UnityEngine.UI;
 
 public class CardSlot : MonoBehaviour
 {
-    [SerializeField] private Image slotImage;
+    [SerializeField] private Image _slotImage;
 
-    private string cardID;
+    private string CardID { get; set; }
 
     private void Start()
     {
-        SetCardSprite(cardID);
+        SetCardSprite(CardID);
     }
 
     public void SetCardID(string id)
     {
-        cardID = id;
+        CardID = id;
     }
 
     private void SetCardSprite(string id)
@@ -22,7 +22,7 @@ public class CardSlot : MonoBehaviour
         string path = $"Image/Arcana[{id}]";
         ResourceManager.Instance.LoadAsset<Sprite>(path, (sprite) =>
         {
-            slotImage.sprite = sprite;
+            _slotImage.sprite = sprite;
         });
     }
 }

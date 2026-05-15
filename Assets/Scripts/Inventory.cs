@@ -2,7 +2,7 @@
 
 public class Inventory : MonoBehaviour
 {
-    [SerializeField] private Transform slotParent;
+    [SerializeField] private Transform _slotParent;
 
     private void Start()
     {
@@ -15,7 +15,7 @@ public class Inventory : MonoBehaviour
         {
             string path = $"Prefab/CardSlot";
 
-            ResourceManager.Instance.InstantiatePrefab(path, slotParent, (prefab) =>
+            ResourceManager.Instance.InstantiatePrefab(path, _slotParent, (prefab) =>
             {
                 CardSlot card = prefab.GetComponent<CardSlot>();
                 card.SetCardID(id);

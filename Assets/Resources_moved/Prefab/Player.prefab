@@ -49,12 +49,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76dfdcd99a53edf42a97a6e3e4527e53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animController: {fileID: 7829927604685562431}
-  hp: 100
-  atk: 10
-  walkSpeed: 5
-  runSpeed: 8
-  jumpForce: 7
+  _animController: {fileID: 7829927604685562431}
+  _walkSpeed: 5
+  _runSpeed: 8
+  _jumpForce: 5
 --- !u!50 &576827255230582551
 Rigidbody2D:
   serializedVersion: 5

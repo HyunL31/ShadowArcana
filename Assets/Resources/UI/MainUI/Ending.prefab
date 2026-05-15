@@ -451,11 +451,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1f0dfe3846a95046a6a09091cb575d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  systemDialogue: {fileID: 4593486808545643327}
-  characterDialogue: {fileID: 9171541266574827228}
-  speaker: {fileID: 476593170677410782}
-  content: {fileID: 2167577558994670141}
-  systemText: {fileID: 8896998769611646874}
+  _systemDialogue: {fileID: 4593486808545643327}
+  _characterDialogue: {fileID: 9171541266574827228}
+  _speaker: {fileID: 476593170677410782}
+  _content: {fileID: 2167577558994670141}
+  _systemText: {fileID: 8896998769611646874}
 --- !u!1 &5940120161115729335
 GameObject:
   m_ObjectHideFlags: 0
@@ -813,7 +813,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6750419542726689815}
   m_Layer: 5
-  m_Name: Dialogue
+  m_Name: Character Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

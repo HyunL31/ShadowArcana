@@ -4,25 +4,31 @@ using UnityEngine;
 
 public class Monster : MonoBehaviour
 {
-    private int monsterHP = 50;
-    private int monsterATK = 10;
+    private int MonsterHP { get; set; }
+    private int MonsterATK { get; set; }
 
-    private PlayerController player;
+    private PlayerController _player;
     private Animator _anim;
-    private bool canAttack = false;
-    private CancellationTokenSource tokenSource = new CancellationTokenSource();
+    private bool _canAttack = false;
+    private CancellationTokenSource _tokenSource = new CancellationTokenSource();
+
+    private void OnEnable()
+    {
+        MonsterHP = 50;
+        MonsterATK = 10;
+    }
 
     private void Attack()
     {
-        player.TakeDamage(monsterATK);
+        _player.TakeDamage(MonsterATK);
         _anim = GetComponent<Animator>();
     }
 
     public void TakeDamage(int atk)
     {
-        monsterHP -= atk;
+        MonsterHP -= atk;
 
-        if (monsterHP <= 0)
+        if (MonsterHP <= 0)
         {
             Die().Forget();
         }
@@ -32,7 +38,7 @@ public class Monster : MonoBehaviour
     {
         while (!token.IsCancellationRequested)
         {
-            if (canAttack)
+            if (_canAttack)
             {
                 Attack();
                 _anim.SetTrigger("Attack");
@@ -50,14 +56,14 @@ public class Monster : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            player = collision.gameObject.GetComponent<PlayerController>();
+            _player = collision.gameObject.GetComponent<PlayerController>();
         }
 
-        if (player != null)
+        if (_player != null)
         {
-            canAttack = true;
+            _canAttack = true;
 
-            AttackRoutine(tokenSource.Token).Forget();
+            AttackRoutine(_tokenSource.Token).Forget();
         }
     }
 
@@ -65,11 +71,11 @@ public class Monster : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            canAttack = false;
+            _canAttack = false;
 
-            tokenSource.Cancel();
+            _tokenSource.Cancel();
 
-            player = null;
+            _player = null;
         }
     }
 

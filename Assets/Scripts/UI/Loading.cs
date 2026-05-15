@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class Loading : MonoBehaviour
 {
-    [SerializeField] private Slider loadingBar;
+    [SerializeField] private Slider _loadingBar;
 
     private void Start()
     {
@@ -14,19 +14,19 @@ public class Loading : MonoBehaviour
     public async UniTaskVoid LoadingRoutine(float duration)
     {
         float elapsed = 0f;
-        loadingBar.value = 0f;
+        _loadingBar.value = 0f;
 
         while (elapsed < duration)
         {
             elapsed += Time.deltaTime;
 
             float progress = Mathf.Clamp01(elapsed / duration);
-            loadingBar.value = progress;
+            _loadingBar.value = progress;
 
             await UniTask.Yield(PlayerLoopTiming.Update);
         }
 
-        loadingBar.value = 1.0f;
+        _loadingBar.value = 1.0f;
         UIExtension.CloseLoading();
     }
 }

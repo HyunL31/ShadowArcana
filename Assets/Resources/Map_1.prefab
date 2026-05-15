@@ -18016,7 +18016,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 024583d83a992f0469cd560d1d98b1d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monsterPos:
+  _monsterPos:
   - {fileID: 760202741298410013}
   - {fileID: 6079639189588326765}
   - {fileID: 995148948029347255}
@@ -19658,12 +19658,24 @@ PrefabInstance:
       value: Dialogue Spawn 1
       objectReference: {fileID: 0}
     - target: {fileID: 5778312177950518799, guid: 3828c08f1a70e5d408eb00e4ee19830f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5.3603086
+      objectReference: {fileID: 0}
+    - target: {fileID: 5778312177950518799, guid: 3828c08f1a70e5d408eb00e4ee19830f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5.3603086
+      objectReference: {fileID: 0}
+    - target: {fileID: 5778312177950518799, guid: 3828c08f1a70e5d408eb00e4ee19830f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 5.3603086
+      objectReference: {fileID: 0}
+    - target: {fileID: 5778312177950518799, guid: 3828c08f1a70e5d408eb00e4ee19830f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12.99
+      value: 139.12
       objectReference: {fileID: 0}
     - target: {fileID: 5778312177950518799, guid: 3828c08f1a70e5d408eb00e4ee19830f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10.23
+      value: -7.97
       objectReference: {fileID: 0}
     - target: {fileID: 5778312177950518799, guid: 3828c08f1a70e5d408eb00e4ee19830f, type: 3}
       propertyPath: m_LocalPosition.z

@@ -41,8 +41,6 @@ public class NetworkManager : MonoBehaviour
 
     public PlayerModel GetDefaultData()
     {
-        Debug.Log("디폴트");
-
         var newSaveData = new PlayerModel();
 
         newSaveData.Stage = 1;

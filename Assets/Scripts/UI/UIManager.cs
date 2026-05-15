@@ -3,10 +3,10 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
-    [SerializeField] private Transform backgroundRoot;
-    [SerializeField] private Transform mainRoot;
-    [SerializeField] private Transform popupRoot;
-    [SerializeField] private Transform frontRoot;
+    [SerializeField] private Transform _backgroundRoot;
+    [SerializeField] private Transform _mainRoot;
+    [SerializeField] private Transform _popupRoot;
+    [SerializeField] private Transform _frontRoot;
 
     private Dictionary<UIType, GameObject> _uiType = new Dictionary<UIType, GameObject>();
     private HashSet<UIType> _openedUI = new HashSet<UIType>();
@@ -29,19 +29,19 @@ public class UIManager : MonoBehaviour
 
         if (rootType == UIRootType.BackgroundUI)
         {
-            root = backgroundRoot;
+            root = _backgroundRoot;
         }
         else if (rootType == UIRootType.MainUI)
         {
-            root = mainRoot;
+            root = _mainRoot;
         }
         else if (rootType == UIRootType.PopupUI)
         {
-            root = popupRoot;
+            root = _popupRoot;
         }
         else if (rootType == UIRootType.FrontUI)
         {
-            root = frontRoot;
+            root = _frontRoot;
         }
 
         return root;
@@ -105,6 +105,6 @@ public class UIManager : MonoBehaviour
 
     public void CloseBackgroundUI()
     {
-        backgroundRoot.gameObject.SetActive(false);
+        _backgroundRoot.gameObject.SetActive(false);
     }
 }

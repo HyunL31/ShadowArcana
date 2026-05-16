@@ -88,7 +88,7 @@ public static class UIExtension
 
     public static void OpenChoiceUI()
     {
-        UIManager.Instance.OpenUI(UIRootType.PopupUI, UIType.Choice);
+        UIManager.Instance.OpenUI(UIRootType.MainUI, UIType.Choice);
     }
 
     public static void CloseChoiceUI()

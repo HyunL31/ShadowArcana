@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Ground
   - Risk
+  - Monster
+  - GameOver
   layers:
   - Default
   - TransparentFX

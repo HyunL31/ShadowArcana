@@ -1,9 +1,12 @@
 ﻿using Cysharp.Threading.Tasks;
+using System.Runtime.CompilerServices;
 using System.Threading;
 using UnityEngine;
 
 public class Monster : MonoBehaviour
 {
+    public bool _isBoss;
+
     private int MonsterHP { get; set; }
     private int MonsterATK { get; set; }
 
@@ -26,6 +29,11 @@ public class Monster : MonoBehaviour
     {
         _player.TakeDamage(MonsterATK);
         _anim = GetComponent<Animator>();
+
+        if (_isBoss)
+        {
+            SoundManager.Instance.SetOnClickSFX("Groomy");
+        }
     }
 
     public void TakeDamage(int atk)
@@ -47,7 +55,11 @@ public class Monster : MonoBehaviour
             if (_canAttack)
             {
                 Attack();
-                _anim.SetTrigger("Attack");
+                
+                if (_anim != null)
+                {
+                    _anim.SetTrigger("Attack");
+                }
 
                 await UniTask.Delay(1500, cancellationToken: token);
             }
@@ -87,10 +99,25 @@ public class Monster : MonoBehaviour
 
     private async UniTaskVoid Die()
     {
-        _anim.SetTrigger("Dead");
+        _tokenSource.Cancel();
 
-        await UniTask.Delay(1000);
+        if (_anim != null)
+        {
+            _anim.SetTrigger("Dead");
+        }
 
-        gameObject.SetActive(false);
+        await UniTask.Delay(400);
+
+        if (_isBoss)
+        {
+            UIExtension.OpenClearUI();
+        }
+
+        Destroy(this.gameObject);
+    }
+
+    private void OnDestroy()
+    {
+        UIManager.Instance.CloseHPBar(_hpBar);
     }
 }

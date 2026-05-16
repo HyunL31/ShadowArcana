@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9e673e32780ed3d499ae19ac297cecb6
+guid: a57f2df336f5df74d9cae1d2d564a545
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -136,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Arcana_00
+      name: Arcana_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 667
-        width: 230
-        height: 350
+        x: 35
+        y: 4011
+        width: 886
+        height: 1354
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,20 +151,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 209d303b93f2e194399be1abf1b4d453
-      internalID: -818971685
+      spriteID: 75fe1e07b20634f43b23f1a5b0779f9e
+      internalID: -286303908
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arcana_06
+      name: Arcana_1
       rect:
         serializedVersion: 2
-        x: 9
-        y: 338
-        width: 231
-        height: 318
+        x: 1003
+        y: 4011
+        width: 881
+        height: 1351
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec0426cb6b6940e41b661e0d52736d8b
-      internalID: -339161064
+      spriteID: d8cc57c4b13afb24796e6963a151f2b7
+      internalID: -1169600669
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arcana_11
+      name: Arcana_9
       rect:
         serializedVersion: 2
-        x: 258
-        y: 337
-        width: 232
-        height: 320
+        x: 1953
+        y: 4011
+        width: 892
+        height: 1349
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,52 +195,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05a105a38c65b314a894b8515c6e31f3
-      internalID: -1231170289
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Arcana_01
-      rect:
-        serializedVersion: 2
-        x: 259
-        y: 667
-        width: 230
-        height: 350
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c175885ba36512e4b9a2807bde38a27a
-      internalID: -1137027220
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Arcana_09
-      rect:
-        serializedVersion: 2
-        x: 507
-        y: 667
-        width: 232
-        height: 351
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e97939d010a10b247b6a36196d2183c2
-      internalID: 2127834026
+      spriteID: 22c633f19f2f22340b13c3cc9d454111
+      internalID: -232857038
       vertices: []
       indices: 
       edges: []
@@ -249,10 +205,10 @@ TextureImporter:
       name: Arcana_18
       rect:
         serializedVersion: 2
-        x: 757
-        y: 666
-        width: 235
-        height: 351
+        x: 2914
+        y: 4006
+        width: 904
+        height: 1359
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -261,20 +217,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69d845a571fd98246ad5b7461f3930c7
-      internalID: -463150650
+      spriteID: 4b89e6300face8b4c9c61c6eb39c9243
+      internalID: -1399267261
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arcana_03
+      name: Arcana_3
       rect:
         serializedVersion: 2
-        x: 1008
-        y: 667
-        width: 238
-        height: 352
+        x: 3874
+        y: 4011
+        width: 917
+        height: 1357
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -283,20 +239,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 496878eb119ab42488d0ff3402ea4a06
-      internalID: 292241253
+      spriteID: ca4a82ef158e38446b59218a42b5b326
+      internalID: -1557437801
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arcana_04
+      name: Arcana_4
       rect:
         serializedVersion: 2
-        x: 1264
-        y: 667
-        width: 233
-        height: 351
+        x: 4861
+        y: 4014
+        width: 908
+        height: 1364
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -305,8 +261,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c238849add2a163479208c5871a5d981
-      internalID: 1511026213
+      spriteID: c0b22b3753f05ab4d81d47f25ad04303
+      internalID: -1899087587
       vertices: []
       indices: 
       edges: []
@@ -315,10 +271,10 @@ TextureImporter:
       name: Arcana_15
       rect:
         serializedVersion: 2
-        x: 1263
-        y: 337
-        width: 235
-        height: 319
+        x: 4856
+        y: 2741
+        width: 905
+        height: 1228
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -327,8 +283,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91dd701d548e9774c880910b52ae24fc
-      internalID: -668779079
+      spriteID: 7ba562bb940452d40bcbb444498d4490
+      internalID: -98725962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcana_10
+      rect:
+        serializedVersion: 2
+        x: 4811
+        y: 1439
+        width: 806
+        height: 1257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13e2f9497b8d5c347a399c2afb9541a6
+      internalID: 1057949982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcana_5
+      rect:
+        serializedVersion: 2
+        x: 3883
+        y: 1473
+        width: 792
+        height: 1226
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72c43fc59d952824da90a91606292d8b
+      internalID: 1235526987
       vertices: []
       indices: 
       edges: []
@@ -337,10 +337,10 @@ TextureImporter:
       name: Arcana_13
       rect:
         serializedVersion: 2
-        x: 1008
-        y: 336
-        width: 237
-        height: 320
+        x: 3883
+        y: 2747
+        width: 911
+        height: 1225
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -349,20 +349,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2863364430827044a4baf3b6d4f324d
-      internalID: 1582420752
+      spriteID: 3171fc5ecc40f0543ab99ac23870fa31
+      internalID: -125093073
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arcana_07
+      name: Arcana_7
       rect:
         serializedVersion: 2
-        x: 757
-        y: 336
-        width: 235
-        height: 320
+        x: 2915
+        y: 2747
+        width: 903
+        height: 1222
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -371,8 +371,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 832ebe97a8168d145b9dec047d5e5ff3
-      internalID: 1589031492
+      spriteID: d24884cdf5455844ea3f952ac6e4fb91
+      internalID: 1486580252
       vertices: []
       indices: 
       edges: []
@@ -381,10 +381,10 @@ TextureImporter:
       name: Arcana_14
       rect:
         serializedVersion: 2
-        x: 506
-        y: 338
-        width: 234
-        height: 318
+        x: 1958
+        y: 2749
+        width: 883
+        height: 1214
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -393,20 +393,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88be3fcdc4f5a6b4dbd03307b5d2d8e9
-      internalID: -1516309746
+      spriteID: ca40c2930cc5b544c85b119074d72f38
+      internalID: -1516826233
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arcana_21
+      name: Arcana_11
       rect:
         serializedVersion: 2
-        x: 506
-        y: 4
-        width: 234
-        height: 322
+        x: 999
+        y: 2744
+        width: 883
+        height: 1222
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -415,20 +415,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f7ff5a45e0896246a55c6cf14a32555
-      internalID: 1230039419
+      spriteID: 9d34549dcc003474fa0b5b480cf42e0d
+      internalID: 428131602
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arcana_20
+      name: Arcana_6
       rect:
         serializedVersion: 2
-        x: 259
-        y: 5
-        width: 231
-        height: 323
+        x: 40
+        y: 2747
+        width: 883
+        height: 1219
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -437,8 +437,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b51469c30a6067f459a6f5f7001fbf2a
-      internalID: -578726290
+      spriteID: be2b080c24e1bd44db1e24b1335edeb0
+      internalID: -2112566569
       vertices: []
       indices: 
       edges: []
@@ -447,10 +447,10 @@ TextureImporter:
       name: Arcana_17
       rect:
         serializedVersion: 2
-        x: 9
-        y: 5
-        width: 231
-        height: 321
+        x: 37
+        y: 1468
+        width: 886
+        height: 1231
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -459,8 +459,162 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca5b8f3638024504b92a4c64fe18555c
-      internalID: -910378521
+      spriteID: ff3516bcb9a6c634aa8ac08d5a49b488
+      internalID: -1696815521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcana_20
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 1470
+        width: 889
+        height: 1229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2225971d00801c44ca4db4ce217eb36e
+      internalID: 960437588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcana_21
+      rect:
+        serializedVersion: 2
+        x: 1947
+        y: 1461
+        width: 888
+        height: 1229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42405f0a8e64b8840aa233bbd3e8e955
+      internalID: -2141312895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcana_2
+      rect:
+        serializedVersion: 2
+        x: 2955
+        y: 1476
+        width: 798
+        height: 1220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c41f35d4b7b655645a7cfbf88b3aa756
+      internalID: 770503294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcana_19
+      rect:
+        serializedVersion: 2
+        x: 2949
+        y: 47
+        width: 869
+        height: 1361
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aef86601ee3eba4895238160fed6c0f
+      internalID: -1144628604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcana_16
+      rect:
+        serializedVersion: 2
+        x: 1938
+        y: 50
+        width: 900
+        height: 1375
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87bd4af3c4bbf4547bca75e26839eb0c
+      internalID: 726473553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcana_12
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 47
+        width: 894
+        height: 1378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b552e99db6158944b2023cc1f163651
+      internalID: -1140803768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcana_8
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 58
+        width: 880
+        height: 1359
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70d138de955f73043a614c4961994622
+      internalID: 414084211
       vertices: []
       indices: 
       edges: []
@@ -469,7 +623,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 1e865bca0e66ad94b8aaa52a0bd6a295
+    spriteID: 54de1a0c97cf12149bf1f09cd4314fbe
     internalID: 0
     vertices: []
     indices: 
@@ -479,21 +633,28 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Arcana_00: -818971685
-      Arcana_01: -1137027220
-      Arcana_03: 292241253
-      Arcana_04: 1511026213
-      Arcana_06: -339161064
-      Arcana_07: 1589031492
-      Arcana_09: 2127834026
-      Arcana_11: -1231170289
-      Arcana_13: 1582420752
-      Arcana_14: -1516309746
-      Arcana_15: -668779079
-      Arcana_17: -910378521
-      Arcana_18: -463150650
-      Arcana_20: -578726290
-      Arcana_21: 1230039419
+      Arcana_0: -286303908
+      Arcana_1: -1169600669
+      Arcana_10: 1057949982
+      Arcana_11: 428131602
+      Arcana_12: -1140803768
+      Arcana_13: -125093073
+      Arcana_14: -1516826233
+      Arcana_15: -98725962
+      Arcana_16: 726473553
+      Arcana_17: -1696815521
+      Arcana_18: -1399267261
+      Arcana_19: -1144628604
+      Arcana_2: 770503294
+      Arcana_20: 960437588
+      Arcana_21: -2141312895
+      Arcana_3: -1557437801
+      Arcana_4: -1899087587
+      Arcana_5: 1235526987
+      Arcana_6: -2112566569
+      Arcana_7: 1486580252
+      Arcana_8: 414084211
+      Arcana_9: -232857038
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

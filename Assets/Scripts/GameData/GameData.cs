@@ -13,6 +13,7 @@ public class Scenario : GameDataBase
     public string NextID;
     public string CharacterID;
     public string Content;
+    public string Background;
     public string BGM;
     public string SFX;
 }
@@ -30,7 +31,7 @@ public class Arcana : GameDataBase
     public string Name;
     public string Description;
     public string Effect;
-    public string Score;
+    public int Score;
     public int ATK;
 }
 

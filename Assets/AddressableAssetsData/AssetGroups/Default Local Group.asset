@@ -15,8 +15,88 @@ MonoBehaviour:
   m_GroupName: Default Local Group
   m_GUID: 928bc74ddeadbb141bb6d0b5a703d829
   m_SerializeEntries:
+  - m_GUID: 049b2dd74f6c99b429d054570992cba4
+    m_Address: Image/El_01
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0b041b255ee26574cb07411b17489017
+    m_Address: Audio/Bad
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 156f7a62a39c5bc4692280f09c358eb3
     m_Address: Prefab/Player
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1cc3794bb31c3e940815ffe7316d63f2
+    m_Address: Image/Groomy_01
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2af5f9807bbef63488cc9126fc87c4e7
+    m_Address: Prefab/ChoiceSlot
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5911ad02094b6ec468b6109376b8b112
+    m_Address: Audio/Stage
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 760e24c2b762bad4586d31070e65bed7
+    m_Address: Audio/Good
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7c98551c3929025479d29454bd9979f7
+    m_Address: Prefab/Monster_Boss
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7e4f676ad6e510b4a985f12d483f6aa0
+    m_Address: Audio/Click
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 85724b21a652c1040b8564f203db207a
+    m_Address: Image/Good
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a19fe6bbf71106245880c7844c85005d
+    m_Address: Image/Normal
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a605a1d6b4b49ce40bfe69f46d2678bd
+    m_Address: Audio/Groomy
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aa035324fb2ec5f448cbda18cf4cb30a
+    m_Address: Audio/Attack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b282b60662dcde948b9e9ecc81394884
+    m_Address: Audio/Normal
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d935ac61da5ecb44a813babfc353e43a
+    m_Address: Image/Nyx_01
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e2a52d41d5397fc41bc1b5c1dfbf5569
+    m_Address: Prefab/RandomCard
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e84e6eedfe0b72f438f42145466e37df
+    m_Address: Image/Bad
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

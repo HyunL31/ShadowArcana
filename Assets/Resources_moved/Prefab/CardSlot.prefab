@@ -50,6 +50,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _slotImage: {fileID: 4151676739962634187}
+  _rect: {fileID: 9092943451975373027}
 --- !u!1 &3767239248903253496
 GameObject:
   m_ObjectHideFlags: 0

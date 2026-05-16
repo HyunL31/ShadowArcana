@@ -27,6 +27,8 @@ public class Loading : UIBase
         }
 
         _loadingBar.value = 1.0f;
+
+        UIExtension.OpenLobby();
         UIExtension.CloseLoading();
     }
 }

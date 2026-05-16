@@ -1,4 +1,5 @@
 ﻿using Cysharp.Threading.Tasks;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -65,12 +66,15 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        _animController.SetAnim(AnimatorController.AnimState.IsMoving);
+        if (_isGround)
+        {
+            _animController.SetAnim(AnimatorController.AnimState.IsMoving);
+        }
 
         float moveSpeed = Input.GetKey(KeyCode.LeftShift) ? _runSpeed : _walkSpeed;
         _isRunning = (moveSpeed == _runSpeed);
 
-        if (_isRunning)
+        if (_isRunning && _isGround)
         {
             _animController.SetAnim(AnimatorController.AnimState.IsRunning);
         }
@@ -110,6 +114,14 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Risk"))
+        {
+            TakeDamage(1);
+        }
+    }
+
     private void Attack()
     {
         _animController.SetAnim(AnimatorController.AnimState.Attack);
@@ -118,6 +130,8 @@ public class PlayerController : MonoBehaviour
         {
             _target.TakeDamage(PlayerATK);
         }
+
+        SoundManager.Instance.SetOnClickSFX("Attack");
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -125,6 +139,12 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Monster"))
         {
             _target = collision.gameObject.GetComponent<Monster>();
+        }
+
+        if (collision.gameObject.CompareTag("GameOver"))
+        {
+            _hpBar.gameObject.SetActive(false);
+            Die().Forget();
         }
     }
 
@@ -154,6 +174,11 @@ public class PlayerController : MonoBehaviour
 
         await UniTask.Delay(500);
 
-        gameObject.SetActive(false);
+        UIExtension.OpenOverUI();
+    }
+
+    private void OnDestroy()
+    {
+        UIManager.Instance.CloseHPBar(_hpBar);
     }
 }

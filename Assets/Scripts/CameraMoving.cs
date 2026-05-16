@@ -9,6 +9,7 @@ public class CameraMoving : MonoBehaviour
 
     private GameObject _player;
     private float yOffset = 1f;
+    private float xOffset = 7f;
 
     private void Update()
     {
@@ -22,7 +23,7 @@ public class CameraMoving : MonoBehaviour
             return;
         }
 
-        Vector3 targetPos = new Vector3(_player.transform.position.x, _player.transform.position.y + yOffset, transform.position.z);
+        Vector3 targetPos = new Vector3(_player.transform.position.x + xOffset, _player.transform.position.y + yOffset, transform.position.z);
 
         Vector3 nextPos = Vector3.Lerp(transform.position, targetPos, _speed * Time.deltaTime);
 

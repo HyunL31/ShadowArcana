@@ -10,6 +10,7 @@ public class Lobby : UIBase
     private void OnEnable()
     {
         SetStage();
+        SoundManager.Instance.SetDialogueBGM("Calm");
         _startButton.onClick.AddListener(OnClickStageStart);
     }
 
@@ -21,18 +22,12 @@ public class Lobby : UIBase
 
     private void OnClickStageStart()
     {
-        string path = $"Map_{GameManager.Instance.GetStage()}";
-        GameObject mapResource = Resources.Load<GameObject>(path);
-        GameObject map = Instantiate(mapResource);
-
-        string playerPath = "Prefab/Player";
-        ResourceManager.Instance.InstantiatePrefab(playerPath, map.transform, (prefab) =>
-        {
-            CameraMoving camera = Camera.main.GetComponent<CameraMoving>();
-            camera.SetPlayer(prefab);
-        });
+        GameManager.Instance.SetMap();
+        GameManager.Instance.SetPlayer();
 
         UIManager.Instance.CloseBackgroundUI();
-        this.gameObject.SetActive(false);
+        SoundManager.Instance.SetOnClickSFX("Click");
+
+        UIExtension.CloseLobby();
     }
 }

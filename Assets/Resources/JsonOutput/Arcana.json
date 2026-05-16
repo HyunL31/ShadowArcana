@@ -1,6 +1,6 @@
 [
   {
-    "ID": "Arcana_00",
+    "ID": "Arcana_0",
     "Name": "광대",
     "Description": "무구함과 새로운 시작. 아무것도 모르는 순수함을 상징합니다.",
     "Effect": null,
@@ -8,7 +8,7 @@
     "ATK": 5
   },
   {
-    "ID": "Arcana_01",
+    "ID": "Arcana_1",
     "Name": "마법사",
     "Description": "창조와 기술. 무언가를 고치거나 새로운 길을 만들어내는 능력을 뜻합니다.",
     "Effect": null,
@@ -16,7 +16,7 @@
     "ATK": 5
   },
   {
-    "ID": "Arcana_02",
+    "ID": "Arcana_2",
     "Name": "여사제",
     "Description": "직관과 지혜. 보이지 않는 진실을 꿰뚫어 보며 내면의 소리에 귀를 기울입니다.",
     "Effect": null,
@@ -24,7 +24,7 @@
     "ATK": 6
   },
   {
-    "ID": "Arcana_03",
+    "ID": "Arcana_3",
     "Name": "여황제",
     "Description": "풍요와 생명. 척박한 지하 세계에서도 생명을 틔우고 주변을 보살피는 자비입니다.",
     "Effect": null,
@@ -32,7 +32,7 @@
     "ATK": 7
   },
   {
-    "ID": "Arcana_04",
+    "ID": "Arcana_4",
     "Name": "황제",
     "Description": "권위와 질서. 혼란을 잠재우기 위해 강압적일 수 있는 단호한 통제력을 상징합니다.",
     "Effect": null,
@@ -40,7 +40,7 @@
     "ATK": 3
   },
   {
-    "ID": "Arcana_05",
+    "ID": "Arcana_5",
     "Name": "교황",
     "Description": "전통과 신념. 규칙을 준수하며 옳고 그름에 대한 도덕적 잣대를 제시합니다.",
     "Effect": null,
@@ -48,7 +48,7 @@
     "ATK": 2
   },
   {
-    "ID": "Arcana_06",
+    "ID": "Arcana_6",
     "Name": "연인",
     "Description": "조화와 관계. 타인과의 깊은 공명, 혹은 화합을 의미합니다.",
     "Effect": null,
@@ -56,7 +56,7 @@
     "ATK": 5
   },
   {
-    "ID": "Arcana_07",
+    "ID": "Arcana_7",
     "Name": "전차",
     "Description": "전진과 승리. 고난이 있어도 멈추지 않고 돌진하는 의지입니다.",
     "Effect": null,
@@ -64,7 +64,7 @@
     "ATK": 2
   },
   {
-    "ID": "Arcana_08",
+    "ID": "Arcana_8",
     "Name": "힘",
     "Description": "인내와 용기. 무력이 아닌 부드러운 힘으로 거친 세상을 길들이는 내면의 강함입니다.",
     "Effect": null,
@@ -72,7 +72,7 @@
     "ATK": 3
   },
   {
-    "ID": "Arcana_09",
+    "ID": "Arcana_9",
     "Name": "은둔자",
     "Description": "고독과 성찰. 타인과의 관계를 끊고 오로지 자신의 목적만을 위해 침잠합니다.",
     "Effect": null,

@@ -15,13 +15,8 @@ MonoBehaviour:
   m_GroupName: Icon
   m_GUID: b009e8b76da9eca49bc259bf3ac3dbe3
   m_SerializeEntries:
-  - m_GUID: 9e673e32780ed3d499ae19ac297cecb6
+  - m_GUID: a57f2df336f5df74d9cae1d2d564a545
     m_Address: Image/Arcana
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: f4e9dc5ed9f700842af718df4785847b
-    m_Address: Image/Aracana
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

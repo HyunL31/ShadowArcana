@@ -5,10 +5,11 @@ public enum SpawnType
     None,
     Dialogue,
     Monster,
-    Battle
+    Boss,
+    Card
 }
 
-public class SpawnSpat : MonoBehaviour
+public class SpawnSpot : MonoBehaviour
 {
     [SerializeField] private SpawnType _spawnType;
     [SerializeField] private string _spawnDataID;
@@ -20,26 +21,37 @@ public class SpawnSpat : MonoBehaviour
         {
             MonsterSpawn();
         }
+        else if (_spawnType == SpawnType.Card)
+        {
+            CardSpawn();
+        }
+        else if (_spawnType == SpawnType.Boss)
+        {
+            BossSpawn();
+        }
     }
 
     private void OnTriggerEnter2D (Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            StartSpawn();
+            CollisionSpawn(other);
         }
     }
 
-    private void StartSpawn()
+    private void CollisionSpawn(Collider2D player)
     {
         switch (_spawnType)
         {
             case SpawnType.Dialogue:
-                UIExtension.OpenEndingUI();
+                GameManager.Instance.SetCurrentDialogueID(_spawnDataID);
+                UIExtension.OpenDialogueUI(_spawnDataID);
+                player.gameObject.SetActive(false);
                 this.gameObject.SetActive(false);
                 break;
 
-            case SpawnType.Battle:
+            case SpawnType.Card:
+                GameManager.Instance.AddInventory(_spawnDataID);
                 this.gameObject.SetActive(false);
                 break;
         }
@@ -50,6 +62,23 @@ public class SpawnSpat : MonoBehaviour
         int random = Random.Range(1, 7);
 
         string path = $"Prefab/Monster_{random}";
+        ResourceManager.Instance.InstantiatePrefab(path, this.gameObject.transform, (monster) => { });
+    }
+
+    private void CardSpawn()
+    {
+        int random = Random.Range(0, 22);
+
+        string slotPath = "Prefab/RandomCard";
+        ResourceManager.Instance.InstantiatePrefab(slotPath, this.gameObject.transform, (card) =>
+        {
+            _spawnDataID = $"Arcana_{random}";
+        });
+    }
+
+    private void BossSpawn()
+    {
+        string path = $"Prefab/Monster_Boss";
         ResourceManager.Instance.InstantiatePrefab(path, this.gameObject.transform, (monster) => { });
     }
 }

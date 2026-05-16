@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
-    [SerializeField] private Transform _canvas;
     [SerializeField] private Transform _backgroundRoot;
     [SerializeField] private Transform _mainRoot;
     [SerializeField] private Transform _popupRoot;
@@ -116,7 +115,7 @@ public class UIManager : MonoBehaviour
         string path = "UI/PopupUI/HPBar";
         UIBase uiBase = Resources.Load<UIBase>(path);
 
-        UIBase gobj = Instantiate(uiBase, _canvas);
+        UIBase gobj = Instantiate(uiBase, _popupRoot);
         HPBar hpBar = gobj.GetComponent<HPBar>();
 
         hpBar.SetValue(0, max);
@@ -133,5 +132,15 @@ public class UIManager : MonoBehaviour
         }
 
         Destroy(hpBar.gameObject);
+    }
+
+    public bool GetIsOpen(UIType type)
+    {
+        if (_openedUI.Contains(type))
+        {
+            return true;
+        }
+
+        return false;
     }
 }

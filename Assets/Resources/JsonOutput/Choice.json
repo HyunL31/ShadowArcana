@@ -2,10 +2,10 @@
   {
     "ID": "Choice_01",
     "ArcanaID": [
-      "Arcana_00",
+      "Arcana_0",
       "Arcana_18"
     ],
-    "ReurnID": [
+    "ReturnID": [
       "Dialogue_12",
       "Dialogue_19",
       "Dialogue_27"
@@ -17,7 +17,7 @@
       "Arcana_14",
       "Arcana_11"
     ],
-    "ReurnID": [
+    "ReturnID": [
       "Stage_01_10",
       "Stage_01_17",
       "Stage_01_24"
